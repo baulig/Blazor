@@ -7807,7 +7807,6 @@ function copyTempDouble(ptr) {
   		},mono_wasm_runtime_ready:function () {
   			console.log (">>mono_wasm_runtime_ready");
   			this.mono_wasm_runtime_is_ready = true;
-  			debugger;
   		},mono_wasm_set_breakpoint:function (assembly, method_token, il_offset) {
   			if (!this.mono_wasm_set_bp)
   				this.mono_wasm_set_bp = Module.cwrap ('mono_wasm_set_breakpoint', 'number', ['string', 'number', 'number']);
